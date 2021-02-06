@@ -1,0 +1,8 @@
+.c9
+
+test/__pycache__/
+
+simple_encryption/__pycache__/
+simple_encryption/.secrets/
+
+.secrets/
