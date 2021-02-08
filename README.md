@@ -102,3 +102,7 @@ simple_encryption decrypt <filename or path> -k <key filename or path>
 
 * [Towards Data Science Blog](https://towardsdatascience.com/how-to-build-and-publish-command-line-applications-with-python-96065049abc1
 )
+
+## Note
+
+Warning! This is a simple encryption tool and it is advised to use it with caution. Do backup your data before encrypting
