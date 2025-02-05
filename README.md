@@ -90,19 +90,6 @@ To decrypt with your key stored in a file
 simple_encryption decrypt <filename or path> -k <key filename or path>
 ```
 
-## Built With
-
-* [Python](https://www.python.org/)
-
-## Author
-
-* [Soutrik Neogi](https://github.com/soutrikneogi)
-
-## Reference
-
-* [Towards Data Science Blog](https://towardsdatascience.com/how-to-build-and-publish-command-line-applications-with-python-96065049abc1
-)
-
 ## Note
 
 Warning! This is a simple encryption tool and it is advised to use it with caution. Do backup your data before encrypting
