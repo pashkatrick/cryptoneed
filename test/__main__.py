@@ -1,12 +1,12 @@
 import unittest
 import os
-import simple_encryption
-from simple_encryption import __main__ as main
+import cryptoneed
+from cryptoneed import __main__ as main
 from click.testing import CliRunner
 
 class Test_a_EncryptionMain(unittest.TestCase):
     def setUp(self):
-        if(os.path.exists('./test-dir') == False):
+        if not os.path.exists('./test-dir'):
             os.mkdir('./test-dir')
         fd = os.open('./test-dir/test-file', os.O_RDWR|os.O_CREAT)
         os.write(fd, str.encode('This is a test-file'))

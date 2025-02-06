@@ -1,7 +1,7 @@
 import unittest
 import os
 
-from simple_encryption.encryption import Encryptor as encryptor
+from cryptoneed.encryption import Encryptor as encryptor
 
 class TestEncryption(unittest.TestCase):
     def test_key_create(self):
@@ -13,7 +13,7 @@ class TestEncryption(unittest.TestCase):
     def test_key_write(self):
         encrypt = encryptor()
         demo_key_val = b'C0JMjOk24fFZTz4Fqm_y6m0iaLSVR_9HOPlf0BSgthI'
-        if(os.path.exists('./.secrets') == False):
+        if not os.path.exists('./.secrets'):
             os.mkdir('./.secrets')
         encrypt.key_write(demo_key_val, './.secrets/test_key')
         
