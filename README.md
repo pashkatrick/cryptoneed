@@ -9,7 +9,7 @@ Use the following commands to install
 Note - You might need root privilege to run this command
 
 ```bash
-git clone https://github.com/soutrikneogi/cryptoneed.git
+git clone https://github.com/pashkatrick/cryptoneed.git
 cd cryptoneed
 python3 setup.py install
 ```
