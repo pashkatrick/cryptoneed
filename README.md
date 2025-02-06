@@ -1,4 +1,4 @@
-# Simple Encryption
+# Cryptoneed
 A simple CLI to encrypt and decrypt files using Python
 
 
@@ -9,8 +9,8 @@ Use the following commands to install
 Note - You might need root privilege to run this command
 
 ```bash
-git clone https://github.com/soutrikneogi/simple-encryption.git
-cd simple-encryption
+git clone https://github.com/soutrikneogi/cryptoneed.git
+cd cryptoneed
 python3 setup.py install
 ```
 
@@ -20,74 +20,74 @@ python3 setup.py install
 
 To encrypt source file
 ```bash
-simple_encryption encyrpt <filename or path>
+cryptoneed encyrpt <filename or path>
 ```
 To encrypt source file to a destination file
 ```bash
-simple_encryption encrypt <filename or filepath> -d <filename or path>
+cryptoneed encrypt <filename or filepath> -d <filename or path>
 ```
 To encrypt source directory
 ```bash
-simple_encryption encrypt -r <dirname or path>
+cryptoneed encrypt -r <dirname or path>
 ```
 
 To encrypt source directory to destination directory
 ```bash
-simple_encryption encrypt -r <dirname or path> -d <dirname or path>
+cryptoneed encrypt -r <dirname or path> -d <dirname or path>
 ```
 
 To encrypt only files in the root of a directory name
 ```bash
-simple_encryption encrypt -r -f <dirname or path>
+cryptoneed encrypt -r -f <dirname or path>
 ```
 
 In the all the above examples a key was created by default and stored in the file ".secrets/enc_key"
 
 To encrypt with your key
 ```bash
-simple_encryption encrypt <filename or path> -K <your key>
+cryptoneed encrypt <filename or path> -K <your key>
 ```
 
 To encrypt with your key stored in a file
 ```bash
-simple_encryption encrypt <filename or path> -k <key filename or path>
+cryptoneed encrypt <filename or path> -k <key filename or path>
 ```
 
 ### Decryption
 
 To decrypt source file
 ```bash
-simple_encryption decyrpt <filename or path>
+cryptoneed decyrpt <filename or path>
 ```
 To decrypt source file to a destination file
 ```bash
-simple_encryption decrypt <filename or filepath> -d <filename or path>
+cryptoneed decrypt <filename or filepath> -d <filename or path>
 ```
 To decrypt source directory
 ```bash
-simple_encryption decrypt -r <dirname or path>
+cryptoneed decrypt -r <dirname or path>
 ```
 
 To decrypt source directory to destination directory
 ```bash
-simple_encryption decrypt -r <dirname or path> -d <dirname or path>
+cryptoneed decrypt -r <dirname or path> -d <dirname or path>
 ```
 
 To decrypt only files in the root of a directory name
 ```bash
-simple_encryption decrypt -r -f <dirname or path>
+cryptoneed decrypt -r -f <dirname or path>
 ```
 
 In the all the above examples a key was extracted by default from the file ".secrets/enc_key", which was created during encryption without using your own key
 
 To decrypt with your key
 ```bash
-simple_encryption decrypt <filename or path> -K <your key>
+cryptoneed decrypt <filename or path> -K <your key>
 ```
 
 To decrypt with your key stored in a file
 ```bash
-simple_encryption decrypt <filename or path> -k <key filename or path>
+cryptoneed decrypt <filename or path> -k <key filename or path>
 ```
 
 ## Note
